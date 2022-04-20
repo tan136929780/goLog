@@ -75,7 +75,7 @@ func NewLogger(logMode int, level int) *Logger {
 			logLevel:        level,
 			message:         "",
 			fileName:        "",
-			logSize:         (20 * 1024 * 1024),
+			logSize:         20 * 1024 * 1024,
 			logMaxFileCount: 5,
 		}
 		break

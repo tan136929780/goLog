@@ -82,8 +82,8 @@ func (printLogger *PrintLogger) Fatal(message string, fileName string, args ...i
 /*
 errorLog error log
 */
-func (logger *PrintLogger) ErrorLog(message, fileName string, args ...interface{}) {
-	logger.Error(message, path.Join("errorLog", fileName))
+func (printLogger *PrintLogger) ErrorLog(message, fileName string, args ...interface{}) {
+	printLogger.Error(message, path.Join("errorLog", fileName))
 }
 
 /*

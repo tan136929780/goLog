@@ -98,8 +98,8 @@ func (fileLogger *FileLogger) Fatal(message string, fileName string, args ...int
 /*
 errorLog error log
 */
-func (logger *FileLogger) ErrorLog(message, fileName string, args ...interface{}) {
-	logger.Error(message, path.Join("errorLog", fileName))
+func (fileLogger *FileLogger) ErrorLog(message, fileName string, args ...interface{}) {
+	fileLogger.Error(message, path.Join("errorLog", fileName))
 }
 
 /*
